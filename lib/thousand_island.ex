@@ -142,7 +142,8 @@ defmodule ThousandIsland do
           port: :inet.port_number(),
           transport_module: module(),
           transport_options: keyword(),
-          num_acceptors: pos_integer()
+          num_acceptors: pos_integer(),
+          read_timeout: pos_integer()
         ]
 
   alias ThousandIsland.{Listener, Server, ServerConfig, Transport}
